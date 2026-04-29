@@ -255,8 +255,8 @@ insert into sys_menu values('1', '系统管理', '0', '1', 'system',           n
 insert into sys_menu values('6', '租户管理', '0', '2', 'tenant',           null, '', 1, 0, 'M', '0', '1', '', 'chart',    103, 1, sysdate(), null, null, '租户管理目录');
 insert into sys_menu values('2', '系统监控', '0', '3', 'monitor',          null, '', 1, 0, 'M', '0', '0', '', 'monitor',  103, 1, sysdate(), null, null, '系统监控目录');
 insert into sys_menu values('3', '系统工具', '0', '4', 'tool',             null, '', 1, 0, 'M', '0', '0', '', 'tool',     103, 1, sysdate(), null, null, '系统工具目录');
-insert into sys_menu values('4', '网站链接', '0', '5', 'https://www.baidu.com', null, '', 0, 0, 'M', '1', '0', '', 'guide',    103, 1, sysdate(), null, null, 'RuoYi-Vue-Plus官网地址');
-insert into sys_menu values('5', '测试菜单', '0', '5', 'demo',             null, '', 1, 0, 'M', '0', '0', '', 'star',     103, 1, sysdate(), null, null, '测试菜单');
+# insert into sys_menu values('4', '网站链接', '0', '5', 'https://www.baidu.com', null, '', 0, 0, 'M', '1', '0', '', 'guide',    103, 1, sysdate(), null, null, 'RuoYi-Vue-Plus官网地址');
+# insert into sys_menu values('5', '测试菜单', '0', '5', 'demo',             null, '', 1, 0, 'M', '0', '0', '', 'star',     103, 1, sysdate(), null, null, '测试菜单');
 -- 二级菜单
 insert into sys_menu values('100',  '用户管理',     '1',   '1', 'user',             'system/user/index',            '', 1, 0, 'C', '0', '0', 'system:user:list',            'user',          103, 1, sysdate(), null, null, '用户管理菜单');
 insert into sys_menu values('101',  '角色管理',     '1',   '2', 'role',             'system/role/index',            '', 1, 0, 'C', '0', '0', 'system:role:list',            'peoples',       103, 1, sysdate(), null, null, '角色管理菜单');
@@ -280,11 +280,11 @@ insert into sys_menu values('132', '字典数据',     '1',   '6', 'dict-data/in
 insert into sys_menu values('133', '文件配置管理',  '1',   '10', 'oss-config/index',              'system/oss/config', '', 1, 1, 'C', '1', '0', 'system:ossConfig:list',  '#',                103, 1, sysdate(), null, null, '/system/oss');
 
 -- springboot-admin监控
-insert into sys_menu values('117',  'Admin监控',   '2',   '5',  'Admin',            'monitor/admin/index',         '', 1, 0, 'C', '0', '0', 'monitor:admin:list',           'dashboard',     103, 1, sysdate(), null, null, 'Admin监控菜单');
+# insert into sys_menu values('117',  'Admin监控',   '2',   '5',  'Admin',            'monitor/admin/index',         '', 1, 0, 'C', '0', '0', 'monitor:admin:list',           'dashboard',     103, 1, sysdate(), null, null, 'Admin监控菜单');
 -- oss菜单
 insert into sys_menu values('118',  '文件管理',     '1',   '10', 'oss',              'system/oss/index',            '', 1, 0, 'C', '0', '0', 'system:oss:list',              'upload',        103, 1, sysdate(), null, null, '文件管理菜单');
 -- snail-job server控制台
-insert into sys_menu values('120',  '任务调度中心',  '2',   '6',  'snailjob',     'monitor/snailjob/index',    '', 1, 0, 'C', '0', '0', 'monitor:snailjob:list',          'job',           103, 1, sysdate(), null, null, 'SnailJob控制台菜单');
+# insert into sys_menu values('120',  '任务调度中心',  '2',   '6',  'snailjob',     'monitor/snailjob/index',    '', 1, 0, 'C', '0', '0', 'monitor:snailjob:list',          'job',           103, 1, sysdate(), null, null, 'SnailJob控制台菜单');
 
 -- 三级菜单
 insert into sys_menu values('500',  '操作日志', '108', '1', 'operlog',    'monitor/operlog/index',    '', 1, 0, 'C', '0', '0', 'monitor:operlog:list',    'form',          103, 1, sysdate(), null, null, '操作日志菜单');
@@ -385,18 +385,18 @@ insert into sys_menu values('1063', '客户端管理修改', '123', '3',  '#', '
 insert into sys_menu values('1064', '客户端管理删除', '123', '4',  '#', '', '', 1, 0, 'F', '0', '0', 'system:client:remove',       '#', 103, 1, sysdate(), null, null, '');
 insert into sys_menu values('1065', '客户端管理导出', '123', '5',  '#', '', '', 1, 0, 'F', '0', '0', 'system:client:export',       '#', 103, 1, sysdate(), null, null, '');
 -- 测试菜单
-insert into sys_menu values('1500', '测试单表',      '5',    '1', 'demo', 'demo/demo/index', '',  1, 0, 'C', '0', '0', 'demo:demo:list', '#', 103, 1, sysdate(), null, null, '测试单表菜单');
-insert into sys_menu values('1501', '测试单表查询',   '1500', '1', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:demo:query',               '#', 103, 1, sysdate(), null, null, '');
-insert into sys_menu values('1502', '测试单表新增',   '1500', '2', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:demo:add',                 '#', 103, 1, sysdate(), null, null, '');
-insert into sys_menu values('1503', '测试单表修改',   '1500', '3', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:demo:edit',                '#', 103, 1, sysdate(), null, null, '');
-insert into sys_menu values('1504', '测试单表删除',   '1500', '4', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:demo:remove',              '#', 103, 1, sysdate(), null, null, '');
-insert into sys_menu values('1505', '测试单表导出',   '1500', '5', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:demo:export',              '#', 103, 1, sysdate(), null, null, '');
-insert into sys_menu values('1506', '测试树表',      '5',    '1', 'tree', 'demo/tree/index', '',  1, 0, 'C', '0', '0', 'demo:tree:list', '#', 103, 1, sysdate(), null, null, '测试树表菜单');
-insert into sys_menu values('1507', '测试树表查询',   '1506', '1', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:tree:query',               '#', 103, 1, sysdate(), null, null, '');
-insert into sys_menu values('1508', '测试树表新增',   '1506', '2', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:tree:add',                 '#', 103, 1, sysdate(), null, null, '');
-insert into sys_menu values('1509', '测试树表修改',   '1506', '3', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:tree:edit',                '#', 103, 1, sysdate(), null, null, '');
-insert into sys_menu values('1510', '测试树表删除',   '1506', '4', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:tree:remove',              '#', 103, 1, sysdate(), null, null, '');
-insert into sys_menu values('1511', '测试树表导出',   '1506', '5', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:tree:export',              '#', 103, 1, sysdate(), null, null, '');
+# insert into sys_menu values('1500', '测试单表',      '5',    '1', 'demo', 'demo/demo/index', '',  1, 0, 'C', '0', '0', 'demo:demo:list', '#', 103, 1, sysdate(), null, null, '测试单表菜单');
+# insert into sys_menu values('1501', '测试单表查询',   '1500', '1', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:demo:query',               '#', 103, 1, sysdate(), null, null, '');
+# insert into sys_menu values('1502', '测试单表新增',   '1500', '2', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:demo:add',                 '#', 103, 1, sysdate(), null, null, '');
+# insert into sys_menu values('1503', '测试单表修改',   '1500', '3', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:demo:edit',                '#', 103, 1, sysdate(), null, null, '');
+# insert into sys_menu values('1504', '测试单表删除',   '1500', '4', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:demo:remove',              '#', 103, 1, sysdate(), null, null, '');
+# insert into sys_menu values('1505', '测试单表导出',   '1500', '5', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:demo:export',              '#', 103, 1, sysdate(), null, null, '');
+# insert into sys_menu values('1506', '测试树表',      '5',    '1', 'tree', 'demo/tree/index', '',  1, 0, 'C', '0', '0', 'demo:tree:list', '#', 103, 1, sysdate(), null, null, '测试树表菜单');
+# insert into sys_menu values('1507', '测试树表查询',   '1506', '1', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:tree:query',               '#', 103, 1, sysdate(), null, null, '');
+# insert into sys_menu values('1508', '测试树表新增',   '1506', '2', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:tree:add',                 '#', 103, 1, sysdate(), null, null, '');
+# insert into sys_menu values('1509', '测试树表修改',   '1506', '3', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:tree:edit',                '#', 103, 1, sysdate(), null, null, '');
+# insert into sys_menu values('1510', '测试树表删除',   '1506', '4', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:tree:remove',              '#', 103, 1, sysdate(), null, null, '');
+# insert into sys_menu values('1511', '测试树表导出',   '1506', '5', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:tree:export',              '#', 103, 1, sysdate(), null, null, '');
 
 -- ----------------------------
 -- 6、用户和角色关联表  用户N-1角色
