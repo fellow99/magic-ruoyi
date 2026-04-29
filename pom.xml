@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.dromara</groupId>
+        <artifactId>ruoyi-vue-plus</artifactId>
+        <version>5.6.0</version>
+    </parent>
+    
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>magic-ruoyi-modules</artifactId>
+    <groupId>org.fellow99</groupId>
+    <version>${magic-ruoyi.version}</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <magic-ruoyi.version>1.0.0</magic-ruoyi.version>
+        
+        <ruoyi-vue-plus.version>5.6.0</ruoyi-vue-plus.version>
+        <magic-api.version>2.2.2</magic-api.version>
+        <spring-boot.version>3.5.14</spring-boot.version>
+        
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        
+        <!-- 插件版本 -->
+        <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
+        <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
+        <maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
+        <maven-surefire-plugin.version>3.5.3</maven-surefire-plugin.version>
+        <flatten-maven-plugin.version>1.3.0</flatten-maven-plugin.version>
+        <!-- 打包默认跳过测试 -->
+        <skipTests>true</skipTests>
+    </properties>
+    <modules>
+        <module>magic-ruoyi-admin</module>
+    </modules>
+
+</project>
