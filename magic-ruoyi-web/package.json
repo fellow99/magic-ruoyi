@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "2.3.2",
+    "@fellow99/magic-editor": "^3.1.0",
     "@highlightjs/vue-plugin": "2.1.2",
     "@vueup/vue-quill": "1.2.0",
     "@vueuse/core": "13.9.0",
@@ -69,7 +70,7 @@
     "unplugin-icons": "22.5.0",
     "unplugin-vue-components": "28.8.0",
     "unplugin-vue-setup-extend-plus": "1.0.1",
-    "vite": "6.4.1",
+    "vite": "^6.4.1",
     "vite-plugin-compression": "0.5.1",
     "vite-plugin-svg-icons-ng": "^1.5.2",
     "vite-plugin-vue-devtools": "8.0.3",
