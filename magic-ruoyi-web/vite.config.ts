@@ -28,6 +28,16 @@ export default defineConfig(({ mode, command }) => {
           changeOrigin: true,
           ws: true,
           rewrite: (path) => path.replace(new RegExp('^' + env.VITE_APP_BASE_API), '')
+        },
+        '/magic/api': {
+          target: 'http://localhost:8080',
+          changeOrigin: true,
+          ws: true
+        },
+        '/magic/console': {
+          target: 'http://localhost:8080',
+          changeOrigin: true,
+          ws: true
         }
       }
     },

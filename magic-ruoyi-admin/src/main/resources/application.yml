@@ -256,3 +256,34 @@ warm-flow:
   node-tooltip: true
   # 默认Authorization，如果有多个token，用逗号分隔
   token-name: ${sa-token.token-name},clientid
+
+--- # magic-api 动态接口引擎配置（前端使用 npm @fellow99/magic-editor 嵌入 SPA 路由 /magic/web，后端 jar 中编辑器已排除）
+magic-api:
+  # 编辑器静态资源路径（保留，magic-api 部分内置接口使用此前缀；前端实际页面由 SPA 路由渲染）
+  web: /magic/web
+  # 用户自定义接口前缀
+  prefix: /magic/api
+  # 是否在启动时banner中打印magic-api信息
+  banner: true
+  # 是否启用swagger
+  show-sql: true
+  # 接口/资源持久化方式
+  resource:
+    type: database
+    table-name: magic_api_file
+    # 自动初始化表（第一次启动建表，之后可关）
+    auto-import-module: db,redis
+  # 安全：登录由 Sa-Token 在 MagicApiConfig 中接管，关闭 magic-api 自身的简单登录
+  security:
+    username: ${MAGIC_API_USER:magic}
+    password: ${MAGIC_API_PASS:magic}
+  # 响应格式与 RuoYi 风格统一（自定义 ResultProvider 在 MagicApiConfig 中提供）
+  response: '{\n  "code": ${code},\n  "msg": "${message}",\n  "data": ${data}\n}'
+  # 不允许执行的脚本/包（安全收敛）
+  secret-key: ${MAGIC_API_SECRET:magic-api-secret}
+  # 备份功能（默认关闭，按需打开）
+  backup:
+    enable: false
+  # WebSocket 调试通道（编辑器调试用）
+  web-socket:
+    handler: /magic/console

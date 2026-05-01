@@ -384,6 +384,7 @@ insert into sys_menu values('1062', '客户端管理新增', '123', '2',  '#', '
 insert into sys_menu values('1063', '客户端管理修改', '123', '3',  '#', '', '', 1, 0, 'F', '0', '0', 'system:client:edit',         '#', 103, 1, sysdate(), null, null, '');
 insert into sys_menu values('1064', '客户端管理删除', '123', '4',  '#', '', '', 1, 0, 'F', '0', '0', 'system:client:remove',       '#', 103, 1, sysdate(), null, null, '');
 insert into sys_menu values('1065', '客户端管理导出', '123', '5',  '#', '', '', 1, 0, 'F', '0', '0', 'system:client:export',       '#', 103, 1, sysdate(), null, null, '');
+insert into sys_menu values('1630', 'API编辑', '3', '3', 'magic/web', 'magic/web/index', '', 1, 0, 'C', '0', '0', 'tool:magic-api:list', 'code', 103, 1, sysdate(), null, null, 'magic-api接口编辑菜单');
 -- 测试菜单
 # insert into sys_menu values('1500', '测试单表',      '5',    '1', 'demo', 'demo/demo/index', '',  1, 0, 'C', '0', '0', 'demo:demo:list', '#', 103, 1, sysdate(), null, null, '测试单表菜单');
 # insert into sys_menu values('1501', '测试单表查询',   '1500', '1', '#',    '', '',  1, 0, 'F', '0', '0', 'demo:demo:query',               '#', 103, 1, sysdate(), null, null, '');

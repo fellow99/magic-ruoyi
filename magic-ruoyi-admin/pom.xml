@@ -83,10 +83,17 @@
             <artifactId>ruoyi-workflow</artifactId>
         </dependency> -->
 
+        <!-- magic-api 动态接口引擎，前端使用 npm @fellow99/magic-editor 故排除内置编辑器 jar -->
         <dependency>
             <groupId>org.ssssssss</groupId>
             <artifactId>magic-api-spring-boot-starter</artifactId>
             <version>${magic-api.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.ssssssss</groupId>
+                    <artifactId>magic-editor</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
