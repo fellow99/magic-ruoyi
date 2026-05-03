@@ -8,6 +8,7 @@ import createIcons from './icons';
 import createSvgIconsPlugin from './svg-icon';
 import createCompression from './compression';
 import createSetupExtend from './setup-extend';
+import createMonacoEditorWorker from './monaco-editor-worker';
 import path from 'path';
 
 export default (viteEnv: any, isBuild = false): [] => {
@@ -21,5 +22,6 @@ export default (viteEnv: any, isBuild = false): [] => {
   vitePlugins.push(createIcons());
   vitePlugins.push(createSvgIconsPlugin(path));
   vitePlugins.push(createSetupExtend());
+  vitePlugins.push(createMonacoEditorWorker());
   return vitePlugins;
 };

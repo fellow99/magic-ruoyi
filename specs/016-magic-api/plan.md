@@ -250,7 +250,7 @@ magic-api:
     data: data
   resource:
     type: database
-    table-name: magic_api_file
+    table-name: magic_api_file_v2
     datasource: master
   security:
     username: ${MAGIC_API_USERNAME:}

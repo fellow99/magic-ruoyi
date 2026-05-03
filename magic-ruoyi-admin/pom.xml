@@ -93,6 +93,11 @@
                     <groupId>org.ssssssss</groupId>
                     <artifactId>magic-editor</artifactId>
                 </exclusion>
+                <!-- Spring Boot 3.x 使用 jakarta servlet，排除 javaee（javax.servlet）版本 -->
+                <exclusion>
+                    <groupId>org.ssssssss</groupId>
+                    <artifactId>magic-api-servlet-javaee</artifactId>
+                </exclusion>
             </exclusions>
         </dependency>
 

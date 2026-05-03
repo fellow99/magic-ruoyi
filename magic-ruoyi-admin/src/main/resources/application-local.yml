@@ -6,7 +6,20 @@ captcha:
 # 多租户配置
 tenant:
   # 是否开启
-  enable: true
+  enable: false
+
+--- # magic-api 配置
+magic-api:
+  # web 控制台入口路径
+  web: /magic/web
+  # 接口存储方式：database（数据库）
+  resource:
+    type: database
+    table-name: magic_api_file_v2
+  # 备份配置（防止代码丢失）
+  backup:
+    enable: false
+    max-history: 30
 
 --- # 监控中心配置
 spring.boot.admin.client:

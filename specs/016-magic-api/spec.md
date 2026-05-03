@@ -88,7 +88,7 @@ magic-api:
     # 存储方式：database（数据库）
     type: database
     # 存储表名
-    table-name: magic_api_file
+    table-name: magic_api_file_v2
     # 使用主数据源
     datasource: master
   # 安全配置（Sa-Token深度集成）
