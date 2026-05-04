@@ -40,14 +40,31 @@ nbdist/
 .vscode
 .claude
 .opencode
+.zed
 
 ### SpecKit ###
 .specify
 
 ######################################################################
-# Others
+# Frontend
+.DS_Store
+node_modules
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Log files
+logs
 *.log
 *.log.gz
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+######################################################################
+# Others
 *.xml.versionsBackup
 *.swp
 
