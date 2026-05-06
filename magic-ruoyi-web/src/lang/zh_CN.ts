@@ -34,6 +34,15 @@ export default {
       topiam: 'TopIam登录',
       gitee: 'Gitee登录',
       github: 'Github登录'
+    },
+    magic: {
+      title: '登录',
+      username: '用户名：',
+      password: '密码：',
+      loginButton: '登录',
+      success: '登录成功',
+      failure: '登录失败',
+      failureMessage: '登录失败，用户名或密码不正确'
     }
   },
   // 注册页面国际化

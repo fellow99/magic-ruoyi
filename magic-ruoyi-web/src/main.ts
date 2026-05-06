@@ -9,6 +9,9 @@ import App from './App.vue';
 import store from './store';
 import router from './router';
 
+// magic-editor plugin (registers $magicConfirm, $magicAlert, $magicDialog globals)
+import { install as installMagicEditor } from '@fellow99/magic-editor';
+
 // 自定义指令
 import directive from './directive';
 
@@ -54,6 +57,7 @@ app.use(store);
 app.use(i18n);
 app.use(VXETable);
 app.use(plugins);
+installMagicEditor(app);
 // 自定义指令
 directive(app);
 

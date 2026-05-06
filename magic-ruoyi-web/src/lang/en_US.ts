@@ -34,6 +34,15 @@ export default {
       topiam: 'TopIam Login',
       gitee: 'Gitee Login',
       github: 'Github Login'
+    },
+    magic: {
+      title: 'Login',
+      username: 'Username:',
+      password: 'Password:',
+      loginButton: 'Login',
+      success: 'Login successful',
+      failure: 'Login failed',
+      failureMessage: 'Login failed, incorrect username or password'
     }
   },
   // 注册页面国际化
