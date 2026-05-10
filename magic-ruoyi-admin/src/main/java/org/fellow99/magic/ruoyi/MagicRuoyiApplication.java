@@ -22,7 +22,7 @@ public class MagicRuoyiApplication {
         SpringApplication application = new SpringApplication(MagicRuoyiApplication.class);
         application.setApplicationStartup(new BufferingApplicationStartup(2048));
         application.run(args);
-        System.out.println("ssdesk-admin启动成功");
+        System.out.println("magic-ruoyi启动成功");
     }
 
 }

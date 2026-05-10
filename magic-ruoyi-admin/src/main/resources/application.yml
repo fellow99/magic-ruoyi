@@ -53,7 +53,7 @@ user:
 # Spring配置
 spring:
   application:
-    name: ssdesk-admin
+    name: magic-ruoyi
   threads:
     # 开启虚拟线程 仅jdk21可用
     virtual:
@@ -104,7 +104,7 @@ sa-token:
   # 在多人登录同一账号时，是否共用一个token (为true时所有登录共用一个token, 为false时每次登录新建一个token)
   is-share: false
   # jwt秘钥
-  jwt-secret-key: abcdefghijklmnopqrstuvwxyz
+  jwt-secret-key: abc-123-magic-ruoyi-2026
 
 # security配置
 security:
@@ -200,7 +200,7 @@ springdoc:
       url: 
   #这里定义了两个分组，可定义多个，也可以不定义
   group-configs:
-    - group: 1.ssdesk-admin模块
+    - group: 1.magic-ruoyi模块
       packages-to-scan: org.fellow99.magic.ruoyi
 
 # 防止XSS攻击
