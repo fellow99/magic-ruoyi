@@ -41,6 +41,7 @@ nbdist/
 .claude
 .opencode
 .zed
+.sisyphus
 
 ### SpecKit ###
 .specify

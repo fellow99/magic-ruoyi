@@ -256,3 +256,18 @@ warm-flow:
   node-tooltip: true
   # 默认Authorization，如果有多个token，用逗号分隔
   token-name: ${sa-token.token-name},clientid
+
+--- # magic-api 配置
+magic-api:
+  # web 控制台入口路径（前端 @fellow99/magic-editor 组件依赖此后端 handler）
+  web: /magic/web
+  # 接口前缀
+  prefix: /magic-api
+  # 接口存储方式：database（数据库）
+  resource:
+    type: database
+    table-name: magic_api_file_v2
+  # 备份配置（防止代码丢失）
+  backup:
+    enable: true
+    max-history: 30
